@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--The provider-info file defines several properties of your app widget, -->
+    <!--including the widget's layout file, default size, configuration activity (if any), -->
+    <!--preview image, and periodic update frequency (how often the widget updates itself, -->
+    <!--in milliseconds).-->
+
+    <!--This file also includes the attribute android:initialKeyguardLayout. -->
+    <!--This attribute enables you to provide a different layout for keyguard (lock screen) widgets. -->
+    <!--Previous versions of Android (4.2/API 17 to 4.4/API 19) allowed widgets to appear on the lock -->
+    <!--screen. Although the app widget tools and APIs still occasionally mention lock screen widgets, -->
+    <!--that functionality is deprecated.-->
+
+    <appwidget-provider
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:initialKeyguardLayout="@layout/new_app_widget"
+        android:initialLayout="@layout/new_app_widget"
+        android:minWidth="110dp"
+        android:minHeight="180dp"
+        android:previewImage="@drawable/example_appwidget_preview"
+        android:resizeMode="horizontal|vertical"
+        android:updatePeriodMillis="1800000"
+        android:widgetCategory="home_screen" />
+
+    <!--If you set updatePeriodMillis to less than 1,800,000 milliseconds, the app widget manager only -->
+    <!--sends update requests every 30 minutes. Because updates use system resources, even if the -->
+    <!--associated app is not running, you should generally avoid frequent app widget updates.-->
+
+    <!--The automatic update interval is timed from the first instance of the widget you placed on the -->
+    <!--home screen. Once that first widget receives an update request, then all the widget instances -->
+    <!--are updated at the same time.-->

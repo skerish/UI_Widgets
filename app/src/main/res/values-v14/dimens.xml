@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--This dimensions file is used for Android API versions 14 and higher. The value of widget-margin -->
+    <!--in this file is 0 dp, because the system adds the margin for you.-->
+
+    <dimen name="widget_margin">0dp</dimen>
+
+</resources>
